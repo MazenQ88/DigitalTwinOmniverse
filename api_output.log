@@ -1,0 +1,917 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 868-791-972
+127.0.0.1 - - [21/Aug/2025 04:35:17] "GET /health HTTP/1.1" 200 -
+CUDA not available, using CPU. Inference will be slower.
+127.0.0.1 - - [21/Aug/2025 04:35:17] "POST /start HTTP/1.1" 200 -
+
+0: 384x640 2 persons, 4 cars, 89.2ms
+Speed: 4.1ms preprocess, 89.2ms inference, 1.6ms postprocess per image at shape (1, 3, 384, 640)
+High latency detected: 1414.8ms (target: \u2264500ms)
+
+0: 384x640 1 person, 1 car, 51.0ms
+Speed: 1.8ms preprocess, 51.0ms inference, 0.8ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 3 cars, 62.3ms
+Speed: 1.7ms preprocess, 62.3ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 53.8ms
+Speed: 1.4ms preprocess, 53.8ms inference, 1.2ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 49.2ms
+Speed: 1.0ms preprocess, 49.2ms inference, 0.6ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 77.7ms
+Speed: 2.0ms preprocess, 77.7ms inference, 1.8ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 63.4ms
+Speed: 3.1ms preprocess, 63.4ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 70.3ms
+Speed: 1.5ms preprocess, 70.3ms inference, 0.9ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 75.5ms
+Speed: 1.4ms preprocess, 75.5ms inference, 1.5ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 58.0ms
+Speed: 2.2ms preprocess, 58.0ms inference, 0.8ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 60.3ms
+Speed: 2.5ms preprocess, 60.3ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 3 cars, 63.5ms
+Speed: 2.4ms preprocess, 63.5ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 190.2ms
+Speed: 2.1ms preprocess, 190.2ms inference, 1.5ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 3 cars, 57.5ms
+Speed: 1.2ms preprocess, 57.5ms inference, 0.7ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 65.0ms
+Speed: 2.2ms preprocess, 65.0ms inference, 1.5ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 5 cars, 86.5ms
+Speed: 4.7ms preprocess, 86.5ms inference, 0.9ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 5 cars, 60.8ms
+Speed: 1.4ms preprocess, 60.8ms inference, 1.9ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 5 cars, 56.6ms
+Speed: 1.2ms preprocess, 56.6ms inference, 1.5ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 6 cars, 65.1ms
+Speed: 1.4ms preprocess, 65.1ms inference, 1.8ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 5 cars, 62.0ms
+Speed: 1.9ms preprocess, 62.0ms inference, 1.5ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 5 cars, 1 truck, 60.4ms
+Speed: 1.3ms preprocess, 60.4ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 7 cars, 1 truck, 57.1ms
+Speed: 1.6ms preprocess, 57.1ms inference, 0.8ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 6 cars, 1 bus, 1 truck, 44.5ms
+Speed: 1.6ms preprocess, 44.5ms inference, 0.7ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 5 cars, 1 bus, 67.5ms
+Speed: 2.2ms preprocess, 67.5ms inference, 1.0ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 8 cars, 1 bus, 1 truck, 53.3ms
+Speed: 2.1ms preprocess, 53.3ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 5 cars, 1 bus, 1 truck, 59.1ms
+Speed: 2.1ms preprocess, 59.1ms inference, 1.6ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 5 cars, 1 bus, 1 truck, 63.0ms
+Speed: 1.6ms preprocess, 63.0ms inference, 2.2ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 7 cars, 1 train, 1 truck, 59.8ms
+Speed: 1.8ms preprocess, 59.8ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 6 cars, 1 bus, 51.5ms
+Speed: 1.7ms preprocess, 51.5ms inference, 0.7ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 8 cars, 1 train, 52.9ms
+Speed: 1.1ms preprocess, 52.9ms inference, 0.7ms postprocess per image at shape (1, 3, 384, 640)
+WARNING:root:No frames for 5s, attempting reconnect...
+
+0: 384x640 2 cars, 218.8ms
+Speed: 3.2ms preprocess, 218.8ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 2 cars, 53.3ms
+Speed: 1.7ms preprocess, 53.3ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 53.0ms
+Speed: 1.3ms preprocess, 53.0ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 50.7ms
+Speed: 1.8ms preprocess, 50.7ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 55.7ms
+Speed: 1.1ms preprocess, 55.7ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 3 cars, 63.7ms
+Speed: 1.8ms preprocess, 63.7ms inference, 1.6ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 76.6ms
+Speed: 2.3ms preprocess, 76.6ms inference, 2.7ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 58.5ms
+Speed: 1.7ms preprocess, 58.5ms inference, 1.8ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 57.4ms
+Speed: 1.6ms preprocess, 57.4ms inference, 1.7ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 54.5ms
+Speed: 1.4ms preprocess, 54.5ms inference, 0.8ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 54.9ms
+Speed: 1.8ms preprocess, 54.9ms inference, 1.0ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 62.8ms
+Speed: 1.9ms preprocess, 62.8ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 52.3ms
+Speed: 2.7ms preprocess, 52.3ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 67.0ms
+Speed: 1.5ms preprocess, 67.0ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 4 cars, 79.4ms
+Speed: 1.1ms preprocess, 79.4ms inference, 1.7ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 4 cars, 79.0ms
+Speed: 4.2ms preprocess, 79.0ms inference, 1.7ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 5 cars, 77.5ms
+Speed: 2.5ms preprocess, 77.5ms inference, 2.7ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 5 cars, 91.6ms
+Speed: 2.3ms preprocess, 91.6ms inference, 2.6ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 6 cars, 90.3ms
+Speed: 3.0ms preprocess, 90.3ms inference, 2.5ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 5 cars, 82.3ms
+Speed: 2.0ms preprocess, 82.3ms inference, 2.3ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 5 cars, 1 truck, 70.5ms
+Speed: 1.7ms preprocess, 70.5ms inference, 1.2ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 7 cars, 1 truck, 75.6ms
+Speed: 1.6ms preprocess, 75.6ms inference, 1.6ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 7 cars, 1 bus, 1 truck, 70.2ms
+Speed: 1.9ms preprocess, 70.2ms inference, 1.6ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 7 cars, 1 bus, 71.3ms
+Speed: 1.6ms preprocess, 71.3ms inference, 1.8ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 5 cars, 1 bus, 1 truck, 76.6ms
+Speed: 2.2ms preprocess, 76.6ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 6 cars, 1 bus, 1 truck, 73.8ms
+Speed: 1.8ms preprocess, 73.8ms inference, 2.5ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 5 cars, 1 bus, 1 truck, 74.2ms
+Speed: 2.0ms preprocess, 74.2ms inference, 2.6ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 8 cars, 1 train, 1 truck, 86.9ms
+Speed: 1.3ms preprocess, 86.9ms inference, 2.4ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 6 cars, 1 bus, 73.9ms
+Speed: 2.6ms preprocess, 73.9ms inference, 2.1ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 7 cars, 1 train, 72.2ms
+Speed: 1.6ms preprocess, 72.2ms inference, 1.8ms postprocess per image at shape (1, 3, 384, 640)
+WARNING:root:No frames for 5s, attempting reconnect...
+
+0: 384x640 1 person, 2 cars, 90.5ms
+Speed: 2.4ms preprocess, 90.5ms inference, 1.5ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 car, 103.8ms
+Speed: 1.7ms preprocess, 103.8ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 198.0ms
+Speed: 8.6ms preprocess, 198.0ms inference, 2.5ms postprocess per image at shape (1, 3, 384, 640)
+
+127.0.0.1 - - [21/Aug/2025 04:35:41] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:41] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 62.8ms
+Speed: 3.1ms preprocess, 62.8ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 57.5ms
+Speed: 1.7ms preprocess, 57.5ms inference, 1.7ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 57.3ms
+Speed: 1.8ms preprocess, 57.3ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 104.9ms
+Speed: 2.9ms preprocess, 104.9ms inference, 0.9ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 58.3ms
+Speed: 1.8ms preprocess, 58.3ms inference, 1.2ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 2 cars, 66.8ms
+Speed: 2.4ms preprocess, 66.8ms inference, 0.9ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 58.5ms
+Speed: 1.6ms preprocess, 58.5ms inference, 1.6ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 62.3ms
+Speed: 2.1ms preprocess, 62.3ms inference, 1.6ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 60.4ms
+Speed: 2.0ms preprocess, 60.4ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 1 car, 60.4ms
+Speed: 2.0ms preprocess, 60.4ms inference, 0.9ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:43] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:43] "GET /read HTTP/1.1" 200 -
+
+0: 384x640 1 person, 1 car, 56.2ms
+Speed: 2.1ms preprocess, 56.2ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 1 person, 5 cars, 57.8ms
+Speed: 1.3ms preprocess, 57.8ms inference, 1.7ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:43] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:43] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:43] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:43] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 4 cars, 60.8ms
+Speed: 3.3ms preprocess, 60.8ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+
+127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 6 cars, 59.7ms
+Speed: 1.6ms preprocess, 59.7ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 5 cars, 77.7ms
+Speed: 4.9ms preprocess, 77.7ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+
+127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 60.3ms
+Speed: 1.9ms preprocess, 60.3ms inference, 3.1ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 62.8ms
+Speed: 1.5ms preprocess, 62.8ms inference, 1.8ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 1 truck, 60.4ms
+Speed: 1.5ms preprocess, 60.4ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:44] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+0: 384x640 7 cars, 1 truck, 69.0ms
+Speed: 3.6ms preprocess, 69.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+0: 384x640 7 cars, 1 bus, 1 truck, 57.2ms
+Speed: 2.6ms preprocess, 57.2ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 1 bus, 59.3ms
+Speed: 1.2ms preprocess, 59.3ms inference, 1.2ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+0: 384x640 6 cars, 1 bus, 1 truck, 56.2ms
+Speed: 1.8ms preprocess, 56.2ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:45] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 1 bus, 1 truck, 56.7ms
+Speed: 1.2ms preprocess, 56.7ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+
+127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 1 bus, 1 truck, 59.4ms
+Speed: 2.8ms preprocess, 59.4ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+
+0: 384x640 7 cars, 1 train, 1 truck, 59.9ms
+Speed: 3.1ms preprocess, 59.9ms inference, 1.9ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+0: 384x640 6 cars, 1 bus, 67.9ms
+Speed: 2.6ms preprocess, 67.9ms inference, 2.2ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+0: 384x640 7 cars, 1 train, 55.3ms
+Speed: 1.6ms preprocess, 55.3ms inference, 1.6ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:46] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:47] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:48] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:49] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:50] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+WARNING:root:No frames for 5s, attempting reconnect...
+127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 2 cars, 66.6ms
+Speed: 3.3ms preprocess, 66.6ms inference, 1.0ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 car, 63.4ms
+Speed: 2.4ms preprocess, 63.4ms inference, 4.0ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:51] "GET /read HTTP/1.1" 200 -
+
+0: 384x640 1 person, 2 cars, 55.0ms
+Speed: 1.2ms preprocess, 55.0ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 57.5ms
+Speed: 2.1ms preprocess, 57.5ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+
+0: 384x640 1 person, 1 car, 64.3ms
+Speed: 1.9ms preprocess, 64.3ms inference, 1.6ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 2 cars, 66.2ms
+Speed: 2.4ms preprocess, 66.2ms inference, 1.9ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 64.8ms
+Speed: 1.8ms preprocess, 64.8ms inference, 1.5ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:52] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 64.2ms
+Speed: 2.6ms preprocess, 64.2ms inference, 1.8ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 2 cars, 60.3ms
+Speed: 2.0ms preprocess, 60.3ms inference, 0.8ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 51.7ms
+Speed: 1.3ms preprocess, 51.7ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 59.5ms
+Speed: 1.9ms preprocess, 59.5ms inference, 0.7ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 55.7ms
+Speed: 1.8ms preprocess, 55.7ms inference, 1.2ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:53] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 50.0ms
+Speed: 1.4ms preprocess, 50.0ms inference, 0.8ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 65.6ms
+Speed: 1.7ms preprocess, 65.6ms inference, 2.7ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 5 cars, 65.5ms
+Speed: 2.1ms preprocess, 65.5ms inference, 2.9ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+
+0: 384x640 1 person, 4 cars, 58.5ms
+Speed: 3.4ms preprocess, 58.5ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 6 cars, 62.5ms
+Speed: 2.2ms preprocess, 62.5ms inference, 2.2ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:54] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 5 cars, 49.3ms
+Speed: 1.6ms preprocess, 49.3ms inference, 0.9ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 57.0ms
+Speed: 1.7ms preprocess, 57.0ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 78.8ms
+Speed: 2.8ms preprocess, 78.8ms inference, 1.5ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 1 truck, 58.2ms
+Speed: 3.6ms preprocess, 58.2ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+0: 384x640 7 cars, 1 truck, 60.9ms
+Speed: 1.7ms preprocess, 60.9ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:55] "POST /start HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:55] "POST /start HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:55] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+0: 384x640 6 cars, 1 bus, 1 truck, 65.6ms
+Speed: 2.0ms preprocess, 65.6ms inference, 1.6ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 1 bus, 69.5ms
+Speed: 2.4ms preprocess, 69.5ms inference, 1.8ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+
+0: 384x640 6 cars, 1 bus, 1 truck, 63.1ms
+Speed: 1.5ms preprocess, 63.1ms inference, 2.1ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 1 bus, 1 truck, 59.7ms
+Speed: 1.8ms preprocess, 59.7ms inference, 1.7ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:56] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 1 bus, 1 truck, 65.7ms
+Speed: 1.9ms preprocess, 65.7ms inference, 1.7ms postprocess per image at shape (1, 3, 384, 640)
+
+127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+0: 384x640 7 cars, 1 train, 1 truck, 60.9ms
+Speed: 3.1ms preprocess, 60.9ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+0: 384x640 6 cars, 1 bus, 61.2ms
+Speed: 1.1ms preprocess, 61.2ms inference, 0.7ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+0: 384x640 7 cars, 1 train, 57.7ms
+Speed: 1.7ms preprocess, 57.7ms inference, 1.2ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:57] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:58] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:35:59] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:00] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:01] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+WARNING:root:No frames for 5s, attempting reconnect...
+
+127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 2 cars, 78.2ms
+Speed: 2.6ms preprocess, 78.2ms inference, 2.4ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 car, 68.4ms
+Speed: 2.7ms preprocess, 68.4ms inference, 1.5ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 2 cars, 65.0ms
+Speed: 1.8ms preprocess, 65.0ms inference, 1.8ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:02] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 66.9ms
+Speed: 1.7ms preprocess, 66.9ms inference, 1.6ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 53.5ms
+Speed: 1.2ms preprocess, 53.5ms inference, 1.2ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 2 cars, 61.9ms
+Speed: 1.9ms preprocess, 61.9ms inference, 1.2ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 52.9ms
+Speed: 1.5ms preprocess, 52.9ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 57.1ms
+Speed: 1.7ms preprocess, 57.1ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+
+127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:03] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 2 cars, 57.8ms
+Speed: 1.8ms preprocess, 57.8ms inference, 1.2ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 73.1ms
+Speed: 2.8ms preprocess, 73.1ms inference, 2.2ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 68.4ms
+Speed: 2.7ms preprocess, 68.4ms inference, 1.5ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 65.4ms
+Speed: 1.7ms preprocess, 65.4ms inference, 1.8ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 66.4ms
+Speed: 2.5ms preprocess, 66.4ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:04] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 1 car, 67.0ms
+Speed: 1.1ms preprocess, 67.0ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 5 cars, 49.5ms
+Speed: 1.3ms preprocess, 49.5ms inference, 0.9ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 4 cars, 60.6ms
+Speed: 2.7ms preprocess, 60.6ms inference, 1.0ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 6 cars, 60.4ms
+Speed: 1.8ms preprocess, 60.4ms inference, 0.7ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+0: 384x640 1 person, 5 cars, 57.2ms
+Speed: 1.6ms preprocess, 57.2ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:05] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:06] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:06] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 59.4ms
+Speed: 3.1ms preprocess, 59.4ms inference, 1.4ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:06] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:06] "GET /read HTTP/1.1" 200 -
+
+127.0.0.1 - - [21/Aug/2025 04:36:06] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:06] "GET /read HTTP/1.1" 200 -
+0: 384x640 5 cars, 64.2ms
+Speed: 1.4ms preprocess, 64.2ms inference, 2.9ms postprocess per image at shape (1, 3, 384, 640)
+127.0.0.1 - - [21/Aug/2025 04:36:06] "GET /read HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Aug/2025 04:36:06] "GET /read HTTP/1.1" 200 -
+
+0: 384x640 5 cars, 1 truck, 73.5ms
+Speed: 1.4ms preprocess, 73.5ms inference, 2.1ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 7 cars, 1 truck, 60.5ms
+Speed: 2.7ms preprocess, 60.5ms inference, 1.6ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 6 cars, 1 bus, 1 truck, 65.4ms
+Speed: 3.0ms preprocess, 65.4ms inference, 2.3ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 5 cars, 1 bus, 57.7ms
+Speed: 1.1ms preprocess, 57.7ms inference, 1.2ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 6 cars, 1 bus, 1 truck, 57.4ms
+Speed: 1.5ms preprocess, 57.4ms inference, 1.0ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 5 cars, 1 bus, 1 truck, 58.6ms
+Speed: 1.6ms preprocess, 58.6ms inference, 1.2ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 5 cars, 1 bus, 1 truck, 50.3ms
+Speed: 1.4ms preprocess, 50.3ms inference, 1.6ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 7 cars, 1 train, 1 truck, 51.6ms
+Speed: 2.3ms preprocess, 51.6ms inference, 1.1ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 6 cars, 1 bus, 62.4ms
+Speed: 1.7ms preprocess, 62.4ms inference, 2.1ms postprocess per image at shape (1, 3, 384, 640)
+
+0: 384x640 7 cars, 1 train, 68.5ms
+Speed: 1.8ms preprocess, 68.5ms inference, 2.3ms postprocess per image at shape (1, 3, 384, 640)
+ * Detected change in 'C:\\Users\\Mazen\\Git\\DigitalTwinS2\\Viz\\omniverse_app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Mazen\\Git\\DigitalTwinS2\\Viz\\omniverse_app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 868-791-972
+ * Detected change in 'C:\\Users\\Mazen\\Git\\DigitalTwinS2\\Viz\\omniverse_app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 868-791-972

@@ -1,0 +1,33 @@
+# Core ML dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0
+
+# Computer vision
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=9.5.0
+
+# Tracking dependencies
+lap>=0.5.12  # Linear Assignment Problem solver for object tracking
+
+# Optional depth estimation
+timm>=0.9.0
+
+# API framework
+flask>=2.3.0
+flask-cors>=4.0.0
+aiohttp>=3.8.0  # For async HTTP communication in Omniverse
+
+# Multi-processing and communication
+multiprocessing-logging>=0.3.4
+zmq>=0.0.0
+pyzmq>=25.0.0
+
+# USD and Omniverse (these may need to be installed separately)
+# pxr  # USD Python bindings - install via pip install usd-core
+# omni.kit.app.setup  # Omniverse Kit - requires separate Omniverse installation
+# omni.kit.app.setup
+psutil>=5.9.0
+tqdm>=4.65.0
+
