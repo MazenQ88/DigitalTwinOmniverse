@@ -62,9 +62,17 @@ echo.
 REM Build kit command with WebRTC extensions if enabled
 set KIT_ARGS=--enable omni.kit.uiapp --enable omni.usd --enable omni.ui --enable omni.kit.commands --enable omni.kit.widget.viewport --enable omni.kit.viewport.window --enable omni.kit.viewport.actions --enable omni.kit.viewport.utility --enable omni.kit.viewport.rtx --enable omni.hydra.rtx --enable omni.kit.manipulator.camera --enable omni.kit.manipulator.prim --enable omni.kit.manipulator.selection --enable omni.kit.manipulator.viewport --enable omni.kit.manipulator.transform --enable omni.kit.viewport.legacy_gizmos --enable omni.kit.window.stage --enable omni.kit.window.property --enable omni.kit.window.content_browser --enable omni.kit.property.usd --enable omni.kit.selection --enable omni.kit.stage_templates --enable omni.kit.widget.stage --enable omni.kit.widget.layers --enable omni.kit.context_menu --enable omni.kit.hotkeys.window --enable omni.kit.primitive.mesh --enable omni.kit.window.console
 
-REM Add WebRTC extensions if enabled
+REM Add WebRTC streaming extensions if enabled
 if "%ENABLE_WEBRTC%"=="true" (
-    set KIT_ARGS=%KIT_ARGS% --enable omni.services.streamclient.webrtc --enable omni.kit.livestream.webrtc --enable omni.kit.window.viewport --enable omni.kit.renderer.core --enable omni.services.transport.server.http --/app/livestream/enabled=true --/app/livestream/port=%WEBRTC_PORT% --/app/livestream/allowResize=true --/app/livestream/skipCapture=false --/renderer/multiGpu/autoEnable=false --/app/window/hideUi=false --/app/livestream/webrtc/enabled=true --/app/livestream/webrtc/port=%WEBRTC_PORT% --/app/livestream/webrtc/interface=%WEBRTC_INTERFACE%
+    echo Enabling WebRTC remote streaming...
+    echo WebRTC will be available at: http://localhost:%WEBRTC_PORT%/streaming/webrtc-client?server=localhost
+    REM Current WebRTC extensions for Kit 106.4+ (replaces deprecated omni.services.streamclient.webrtc)
+    set KIT_ARGS=%KIT_ARGS% --enable omni.kit.livestream.webrtc --enable omni.kit.livestream.webrtc.setup --enable omni.services.transport.server.http
+    REM WebRTC streaming configuration
+    set KIT_ARGS=%KIT_ARGS% --/app/livestream/enabled=true --/app/livestream/port=%WEBRTC_PORT% --/app/livestream/webrtc/enabled=true --/app/livestream/webrtc/port=%WEBRTC_PORT% --/app/livestream/webrtc/interface=%WEBRTC_INTERFACE% --/app/window/hideUi=false
+) else (
+    echo WebRTC remote streaming is disabled.
+    echo To enable: set ENABLE_WEBRTC=true in this script.
 )
 
 REM Add script execution

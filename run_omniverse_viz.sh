@@ -105,24 +105,28 @@ KIT_ARGS=(
     --enable omni.kit.window.console
 )
 
-# Add WebRTC extensions if enabled
+# Add WebRTC streaming extensions if enabled
 if [ "$ENABLE_WEBRTC" = true ]; then
+    echo "Enabling WebRTC remote streaming..."
+    echo "WebRTC will be available at: http://localhost:$WEBRTC_PORT/streaming/webrtc-client?server=localhost"
+    
     KIT_ARGS+=(
-        --enable omni.services.streamclient.webrtc
+        # Current WebRTC extensions for Kit 106.4+ (replaces deprecated omni.services.streamclient.webrtc)
         --enable omni.kit.livestream.webrtc
-        --enable omni.kit.window.viewport
-        --enable omni.kit.renderer.core
+        --enable omni.kit.livestream.webrtc.setup
         --enable omni.services.transport.server.http
+        
+        # WebRTC streaming configuration
         --/app/livestream/enabled=true
         --/app/livestream/port=$WEBRTC_PORT
-        --/app/livestream/allowResize=true
-        --/app/livestream/skipCapture=false
-        --/renderer/multiGpu/autoEnable=false
-        --/app/window/hideUi=false
         --/app/livestream/webrtc/enabled=true
         --/app/livestream/webrtc/port=$WEBRTC_PORT
         --/app/livestream/webrtc/interface="$WEBRTC_INTERFACE"
+        --/app/window/hideUi=false
     )
+else
+    echo "WebRTC remote streaming is disabled."
+    echo "To enable: set ENABLE_WEBRTC=true in this script."
 fi
 
 # Add script execution
