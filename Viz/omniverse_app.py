@@ -30,7 +30,7 @@ class DetectionVisualizer:
     def __init__(self):
         self.stage = None
         self.detection_prims = {}  # track_id -> prim_path
-        self.api_url = "http://127.0.0.1:8000"
+        self.api_url = "http://127.0.0.1:5000"
         self.last_update_time = 0
         self.update_interval = 0.1  # 100ms update interval
         
@@ -919,7 +919,7 @@ def main():
         _stage_subscription = _stage_sub
         
         logger.info("Detection Visualizer initialized successfully")
-        logger.info("Waiting for detections from API at http://127.0.0.1:8000")
+        logger.info("Waiting for detections from API at http://127.0.0.1:5000")
         logger.info("IMPORTANT: Make sure the API server is running!")
         logger.info("To start the API server, run: python API/app.py")
         logger.info("Or use the batch file: run_local_demo.bat")

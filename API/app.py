@@ -170,7 +170,7 @@ if __name__ == '__main__':
     # Run the Flask app
     app.run(
         host='127.0.0.1',  # Allow external access
-        port=8000,
+        port=5000,
         debug=config.verbose,
         threaded=True
     )

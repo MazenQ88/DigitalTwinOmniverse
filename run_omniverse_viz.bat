@@ -1,14 +1,19 @@
 @echo off
 setlocal
 
-REM Omniverse Detection Visualization Launcher
-REM This script runs the detection visualizer in Omniverse Kit
+REM Omniverse Detection Visualization Launcher with WebRTC Remote Rendering
+REM This script runs the detection visualizer in Omniverse Kit with remote streaming support
 
-echo === Omniverse Detection Visualizer ===
+echo === Omniverse Detection Visualizer with WebRTC Remote Rendering ===
 echo.
 
 REM Set the path to kit.exe (adjust this to your Omniverse installation path)
 set KIT_PATH=kit.exe
+
+REM WebRTC Configuration
+set WEBRTC_PORT=8211
+set WEBRTC_INTERFACE=0.0.0.0
+set ENABLE_WEBRTC=true
 
 @REM REM Check if kit.exe exists
 @REM if not exist "%KIT_PATH%" (
@@ -41,45 +46,32 @@ if not exist "%USD_FILE%" (
     set USD_FILE=
 )
 
-echo Starting Omniverse Kit with Detection Visualizer...
+echo Starting Omniverse Kit with Detection Visualizer and WebRTC Remote Rendering...
 echo Script: %SCRIPT_PATH%
 if not "%USD_FILE%"=="" (
     echo USD File: %USD_FILE%
 )
+if "%ENABLE_WEBRTC%"=="true" (
+    echo WebRTC Remote Rendering: ENABLED
+    echo WebRTC Port: %WEBRTC_PORT%
+    echo WebRTC Interface: %WEBRTC_INTERFACE%
+    echo Remote Access URL: http://localhost:%WEBRTC_PORT%
+)
 echo.
 
-REM Run kit.exe with required extensions and execute the script
-"%KIT_PATH%" ^
-    --enable omni.kit.uiapp ^
-    --enable omni.usd ^
-    --enable omni.ui ^
-    --enable omni.kit.commands ^
-    --enable omni.kit.widget.viewport ^
-    --enable omni.kit.viewport.window ^
-    --enable omni.kit.viewport.actions ^
-    --enable omni.kit.viewport.utility ^
-    --enable omni.kit.viewport.rtx ^
-    --enable omni.hydra.rtx ^
-    --enable omni.hydra.rtx.shadercache.d3d12 ^
-    --enable omni.kit.manipulator.camera ^
-    --enable omni.kit.manipulator.prim ^
-    --enable omni.kit.manipulator.selection ^
-    --enable omni.kit.manipulator.viewport ^
-    --enable omni.kit.manipulator.transform ^
-    --enable omni.kit.viewport.legacy_gizmos ^
-    --enable omni.kit.window.stage ^
-    --enable omni.kit.window.property ^
-    --enable omni.kit.window.content_browser ^
-    --enable omni.kit.property.usd ^
-    --enable omni.kit.selection ^
-    --enable omni.kit.stage_templates ^
-    --enable omni.kit.widget.stage ^
-    --enable omni.kit.widget.layers ^
-    --enable omni.kit.context_menu ^
-    --enable omni.kit.hotkeys.window ^
-    --enable omni.kit.primitive.mesh ^
-    --enable omni.kit.window.console ^
-    --exec "%SCRIPT_PATH% %USD_FILE%"
+REM Build kit command with WebRTC extensions if enabled
+set KIT_ARGS=--enable omni.kit.uiapp --enable omni.usd --enable omni.ui --enable omni.kit.commands --enable omni.kit.widget.viewport --enable omni.kit.viewport.window --enable omni.kit.viewport.actions --enable omni.kit.viewport.utility --enable omni.kit.viewport.rtx --enable omni.hydra.rtx --enable omni.kit.manipulator.camera --enable omni.kit.manipulator.prim --enable omni.kit.manipulator.selection --enable omni.kit.manipulator.viewport --enable omni.kit.manipulator.transform --enable omni.kit.viewport.legacy_gizmos --enable omni.kit.window.stage --enable omni.kit.window.property --enable omni.kit.window.content_browser --enable omni.kit.property.usd --enable omni.kit.selection --enable omni.kit.stage_templates --enable omni.kit.widget.stage --enable omni.kit.widget.layers --enable omni.kit.context_menu --enable omni.kit.hotkeys.window --enable omni.kit.primitive.mesh --enable omni.kit.window.console
+
+REM Add WebRTC extensions if enabled
+if "%ENABLE_WEBRTC%"=="true" (
+    set KIT_ARGS=%KIT_ARGS% --enable omni.services.streamclient.webrtc --enable omni.kit.livestream.webrtc --enable omni.kit.window.viewport --enable omni.kit.renderer.core --enable omni.services.transport.server.http --/app/livestream/enabled=true --/app/livestream/port=%WEBRTC_PORT% --/app/livestream/allowResize=true --/app/livestream/skipCapture=false --/renderer/multiGpu/autoEnable=false --/app/window/hideUi=false --/app/livestream/webrtc/enabled=true --/app/livestream/webrtc/port=%WEBRTC_PORT% --/app/livestream/webrtc/interface=%WEBRTC_INTERFACE%
+)
+
+REM Add script execution
+set KIT_ARGS=%KIT_ARGS% --exec "%SCRIPT_PATH% %USD_FILE%"
+
+REM Run kit.exe with all arguments
+"%KIT_PATH%" %KIT_ARGS%
 
 if errorlevel 1 (
     echo.
