@@ -57,7 +57,7 @@ timeout /t 5 /nobreak >nul
 
 REM Check if API is running
 echo    Testing API connection...
-curl -s http://localhost:8000/health >nul 2>&1
+curl -s http://localhost:5000/health >nul 2>&1
 if errorlevel 1 (
     echo    Error: API server failed to start
     call :cleanup
@@ -71,7 +71,7 @@ echo 2. Starting Detection System...
 
 REM Start detection system with better error handling
 echo    Sending start request to API...
-curl -s -X POST http://localhost:8000/start -o start_response.json 2>&1
+curl -s -X POST http://localhost:5000/start -o start_response.json 2>&1
 if errorlevel 1 (
     echo    × Failed to communicate with API server
     echo    Stopping API server...
@@ -138,7 +138,7 @@ echo Stopping demo...
 
 REM Stop detection system
 echo    Stopping detection system...
-curl -s -X POST http://localhost:8000/stop >nul 2>&1
+curl -s -X POST http://localhost:5000/stop >nul 2>&1
 
 REM Kill Python processes (be careful with this - it will kill ALL Python processes)
 echo    Stopping API server and visualization...
